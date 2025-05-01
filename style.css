@@ -1,0 +1,820 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Home Section */
+
+.desktop {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  min-height: 100dvh;
+  min-height: 100vh;
+}
+
+.div {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 1440px;
+  min-height: 100dvh;
+  min-height: 100vh;
+  position: relative;
+  padding: min(1em, 8%);
+  padding-top: 0px;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: min(1em, 5%);
+  width: 100%;
+  gap: 20px;
+}
+
+.logo-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0; 
+}
+
+.untitled-design {
+  width: clamp(30px, 5vw, 49px);
+  height: clamp(30px, 5vw, 51px);
+  object-fit: cover;
+  animation: fadeInCenter 1.8s ease-in-out;
+}
+
+.text-wrapper-2 {
+  font-family: "Nova Oval-Book", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  margin-left: 1em;
+  animation: fadeInCenter 1.8s ease-in-out;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.menu-icon.active {
+  transform: rotate(90deg);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-links {
+  display: flex;
+  gap: clamp(1em, 5vw, 3em);
+  margin-left: auto;
+  animation: fadeInDown 1.8s ease-out;
+}
+
+.text-wrapper-3,
+.text-wrapper-4,
+.text-wrapper-5,
+.text-wrapper-6 {
+  font-family: "Rubik-Medium", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+}
+
+.overlap-group {
+  position: relative;
+  width: 100%;
+  min-height: 65dvh;
+  background-color: #f5f5eb;
+  border-radius: 150px 50px 150px 50px;
+  padding: min(3em, 5%);
+  display: flex;
+  flex-direction: column;
+}
+
+.text-wrapper {
+  font-family: 'Nova Oval', sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: clamp(1rem, 3vw, 4rem);
+  letter-spacing: 0;
+  line-height: 1.2;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.text-wrapper p {
+  animation: slideDownBlur 1.8 ease-in-out;
+}
+
+.content-container {
+  display: flex;
+  align-items: center; 
+  gap: 2em;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.setiap-lembar {
+  font-family: "OFL Sorts Mill Goudy TT", serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #000000;
+  font-size: clamp(1rem, 4vw, 5rem);
+  line-height: 1.4;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+.our-plantable-seed {
+  width: clamp(1rem, 4vw, 5rem);
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50px 20px 50px 20px;
+  flex: 1;
+  align-self: center; 
+}
+
+/* Home Section End */
+
+
+/* About Section */
+
+.page-2 {
+  position: relative;
+  width: 100%;
+  min-height: 65dvh;
+  background-color: #ffffff;
+  padding: min(1em, 3%);
+  display: flex;
+  flex-direction: column;
+}
+
+.container-page-2 {
+  display: flex;
+  justify-content: left;
+  gap: 2em;
+  margin-top: auto;
+  margin-bottom: auto;
+  flex-direction: row-reverse;
+}
+
+.judul-page-2 {
+  font-family: 'Nova Oval', sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: clamp(1rem, 3vw, 4rem);
+  letter-spacing: 0;
+  line-height: 1.2;
+  margin-top: 1em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.deskripsi-page-2 {
+  font-family: "OFL Sorts Mill Goudy TT", serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #000000;
+  font-size: clamp(0.9rem, 1.5vw, 3rem);
+  line-height: 1.4;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+.img-page-2 {
+  width: clamp(1rem, 40vw, 500rem);
+  max-width: 600px;
+  height: 44em;
+  object-fit: cover;
+  border-radius: 20px 20px 20px 20px;
+  flex: 1;
+  align-self: center; 
+}
+
+/* About Section end */
+
+
+/* Our Product Section */
+
+.page-3 {
+  position: relative;
+  width: 100%;
+  min-height: 100dvh;
+  height: 100vh;
+  padding: min(1em, 3%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-judul-page-3 {
+  display: flex;
+  justify-content: center;
+}
+
+.judul-page-3{
+  font-family: 'Nova Oval', sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: clamp(1rem, 3vw, 4rem);
+  letter-spacing: 0;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.content-page-3{
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.item-page-3 {
+  text-align: center;
+  padding: min(10em, 5%);
+}
+
+.item-page-3 p {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.img-page-3 {
+  width: clamp(1rem, 20vw, 500rem);
+  max-width: 600px;
+  height: min(25em, 80%);
+  object-fit: cover;
+  border-radius: 20px 20px 20px 20px;
+  flex: 1;
+  align-self: center; 
+}
+
+/* Our Product Section End*/
+
+
+/* Contact Us section */
+.page-4{
+  min-height: 100dvh;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container-judul-page-4 {
+  display: flex;
+  justify-content: center;
+}
+
+.judul-page-4{
+  font-family: 'Nova Oval', sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: clamp(1rem, 3vw, 4rem);
+  letter-spacing: 0;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.container-1-page-4 {
+  width: 100%;
+  min-height: 40dvh;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wa-page-4 {
+  border-radius: 15px;
+  background-color: #F5F5EB;
+  width: 17em;
+  padding: 2em;
+  margin: 1em;
+  height: 11em;
+}
+
+.wa-icon-page-4 {
+  padding: 0em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wa-icon-page-4 img {
+  width: 3em;
+}
+
+.wa-no-page-4 {
+  display: flex;
+  align-items: center;  
+  flex-direction: column;
+}
+
+.wa-no-page-4 p {
+  padding: 0.5em;
+}
+
+.button-wa-page-4 {
+  background-color: #EFE7DA;     
+  color: black;                  
+  padding: 5px 10px;            
+  border: none;                  
+  border-radius: 20px;            
+  font-size: 0.8em;               
+  border: 1px solid black;
+}
+
+.ig-page-4 {
+  border-radius: 15px;
+  background-color: #F5F5EB;
+  width: 17em;
+  padding: 2em;
+  margin: 1em;
+  height: 11em;
+}
+
+.ig-icon-page-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ig-icon-page-4 img {
+  width: 3em;
+}
+
+.ig-name-page-4 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ig-name-page-4 p {
+  padding: 0.5em;
+}
+
+.button-ig-page-4 {
+  background-color: #EFE7DA;     
+  color: black;                  
+  padding: 5px 10px;            
+  border: none;                  
+  border-radius: 20px;            
+  font-size: 0.8em;               
+  border: 1px solid black;
+}
+
+.tt-page-4 {
+  border-radius: 15px;
+  background-color: #F5F5EB;
+  width: 17em;
+  padding: 2em;
+  margin: 1em;
+  height: 11em;
+}
+
+.tt-icon-page-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tt-icon-page-4 img {
+  width: 3em;
+}
+
+.tt-name-page-4 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tt-name-page-4 p {
+  padding: 0.5em;
+}
+
+.button-tt-page-4 {
+  background-color: #EFE7DA;     
+  color: black;                  
+  padding: 5px 10px;            
+  border: none;                  
+  border-radius: 20px;            
+  font-size: 0.8em;               
+  border: 1px solid black;
+}
+
+.container-2-page-4 {
+  width: 100%;
+  min-height: 40dvh;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.bl-page-4 {
+  border-radius: 15px;
+  background-color: #F5F5EB;
+  width: 17em;
+  padding: 2em;
+  margin: 1em;
+  height: 11em;
+}
+
+.bl-icon-page-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bl-icon-page-4 img {
+  width: 3em;
+}
+
+.bl-name-page-4 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bl-name-page-4 p {
+  padding: 0.5em;
+}
+
+.button-bl-page-4 {
+  background-color: #EFE7DA;     
+  color: black;                  
+  padding: 5px 10px;            
+  border: none;                  
+  border-radius: 20px;            
+  font-size: 0.8em;               
+  border: 1px solid black;
+}
+
+.sp-page-4 {
+  border-radius: 15px;
+  background-color: #f5f5eb;
+  width: 17em;
+  padding: 2em;
+  margin: 1em;
+  height: 11em;
+}
+
+.sp-icon-page-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sp-icon-page-4 img {
+  width: 3em;
+}
+
+.sp-name-page-4 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sp-name-page-4 p {
+  padding: 0.5em;
+}
+
+.button-sp-page-4 {
+  background-color: #EFE7DA;     
+  color: black;                  
+  padding: 5px 10px;            
+  border: none;                  
+  border-radius: 20px;            
+  font-size: 0.8em;               
+  border: 1px solid black;
+}
+
+.tk-page-4 {
+  background-color: #F5F5EB;
+  width: 17em;
+  padding: 2em;
+  margin: 1em;
+  height: 11em;
+  border-radius: 15px;
+}
+
+.tk-icon-page-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tk-icon-page-4 img {
+  width: 3em;
+}
+
+.tk-name-page-4 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tk-name-page-4 p {
+  padding: 0.5em;
+}
+
+.button-tk-page-4 {
+  background-color: #EFE7DA;     
+  color: black;                  
+  padding: 5px 10px;            
+  border: none;                  
+  border-radius: 20px;            
+  font-size: 0.8em;               
+  border: 1px solid black;
+}
+
+/* Contact Us section End */
+
+
+/* Responsive Section */
+
+@media (max-width: 768px) {
+
+  /* Home Section */
+
+  .menu-icon {
+    display: block;
+    position: relative;
+    z-index: 1001;
+  }
+
+  .nav-links {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 70%;
+    max-width: 300px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    flex-direction: column;
+    padding: 2em;
+    box-shadow: -10px 0 15px rgba(0,0,0,0.1);
+    z-index: 1000;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
+    transform: translateX(100%);
+    margin: 0;
+  }
+
+  .nav-links a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    padding: .75em 0;   
+  }
+
+  .nav-links::before {
+    pointer-events: none;
+    content: '';
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .nav-links.active {
+    display: flex;
+    right: 0;
+    transform: translateX(0);
+    animation: slideIn 0.3s ease;
+  }
+  
+  .nav-links.active::before {
+    left: 0;
+    opacity: 1;
+    width: 100%;
+  }
+  
+  .overlap-group {
+    min-height: 5dvh;
+    border-radius: 50px 20px 50px 20px;
+  }
+
+  .content-container {
+    flex-direction: column-reverse;
+  }
+  
+  .our-plantable-seed {
+    max-height: 300px;
+    width: 100%;
+    float: none;
+    margin: 2em;
+    display: flex;
+    align-items: center;
+  }
+
+  .setiap-lembar{
+    text-align: center;
+  }
+
+  /* Home Section End */
+
+
+  /* About Section */
+
+  .container-page-2 {
+    flex-direction: column-reverse;
+    text-align: center;
+    height: 100dvh;
+    height: 100vh;
+    justify-content: center;
+  }
+
+  .judul-page-2{
+    font-family: 'Nova Oval', sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: clamp(3rem, 8vw, 10rem);
+    letter-spacing: 0;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+  }
+
+  .img-page-2 {
+    width: clamp(5rem, 80vw, 500rem);
+    max-width: 600px;
+    height: auto;
+    max-height: 20em;
+  }
+
+  /* About Section End */
+
+
+  /* Our Product Section */
+
+  .page-3 {
+    min-height: 220dvh;
+    min-height: 220vh;
+  }
+
+  .content-page-3 {
+    margin: 0px;
+    padding: 0px;
+    flex-direction: column;
+  }
+  
+  .container-judul-page-3 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .judul-page-3{
+    font-family: 'Nova Oval', sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: clamp(3rem, 8vw, 10rem);
+    letter-spacing: 0;
+    line-height: 1.2;
+    text-align: center;
+  }
+  
+  
+  .item-page-3 {
+    text-align: center;
+    padding: 0px;
+  }
+  
+  .item-page-3 p {
+    margin-bottom: 0em;
+  }
+  
+  .img-page-3 {
+    width: clamp(20rem, 20vw, 500rem);
+    max-width: 600px;
+    height: min(25em, 80%);
+    object-fit: cover;
+    border-radius: 20px 20px 20px 20px;
+    flex: 1;
+    align-self: center; 
+  }
+
+  /* Our Product Section End */
+
+
+  /* Contact Us Section */
+
+  .container-1-page-4 {
+    flex-direction: column;
+  }
+
+  .container-2-page-4 {
+    flex-direction: column;
+  }
+
+  .judul-page-4{
+    font-family: 'Nova Oval', sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: clamp(3rem, 8vw, 10rem);
+    letter-spacing: 0;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 2em;
+  }
+
+  /* Contact Us Section End */
+
+}
+
+/* Responsive Section End */
+
+/* Animation: Section */
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomBlurOut {
+  0% {
+      transform: scale(1.5);
+      filter: blur(10px);
+      opacity: 0;
+  }
+  50% {
+      opacity: 0.5;
+  }
+  100% {
+      transform: scale(1);
+      filter: blur(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideDownBlur {
+  0% {
+      transform: translateY(-30px);
+      filter: blur(10px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      filter: blur(0);
+      opacity: 1;
+  }
+}
+
+@keyframes fadeInCenter {
+  0% {
+      opacity: 0;
+      transform: scale(0.95);
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}  
+
+/* Animation: Section End */
